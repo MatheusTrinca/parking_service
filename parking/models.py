@@ -3,7 +3,7 @@ from vehicles.models import Vehicle
 
 # Create your models here.
 class ParkingSpot(models.Model):
-    number = models.CharField(
+    spot_number = models.CharField(
         max_length=10,
         unique=True,
         verbose_name='Número'
@@ -26,7 +26,7 @@ class ParkingSpot(models.Model):
         verbose_name_plural = 'Vagas'
 
     def __str__(self):
-        return self.number
+        return self.spot_number
     
 
 class ParkingRecord(models.Model):
