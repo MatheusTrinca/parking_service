@@ -1,7 +1,7 @@
 from django.contrib import admin
 from parking.models import ParkingSpot, ParkingRecord
 
-# Register your models here.
+
 @admin.register(ParkingSpot)
 class ParkingSpotAdmin(admin.ModelAdmin):
     list_display = ('spot_number', 'is_occupied')

@@ -1,7 +1,7 @@
 from django.contrib import admin
 from vehicles.models import Vehicle, VehicleType
 
-# Register your models here.
+
 @admin.register(VehicleType)
 class VehicleTypeAdmin(admin.ModelAdmin):
     list_display = ('name', 'description')

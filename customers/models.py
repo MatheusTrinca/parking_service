@@ -1,10 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
+
 class Customer(models.Model):
     user = models.OneToOneField(
-        User, 
+        User,
         on_delete=models.PROTECT,
         blank=True,
         null=True,
@@ -22,7 +22,7 @@ class Customer(models.Model):
         max_length=15,
         blank=True,
         null=True,
-        verbose_name='Telefone',    
+        verbose_name='Telefone',
     )
     created_at = models.DateTimeField(
         auto_now_add=True,

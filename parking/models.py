@@ -1,6 +1,7 @@
 from django.db import models
 from vehicles.models import Vehicle
 
+
 # Create your models here.
 class ParkingSpot(models.Model):
     spot_number = models.CharField(
@@ -27,7 +28,7 @@ class ParkingSpot(models.Model):
 
     def __str__(self):
         return self.spot_number
-    
+
 
 class ParkingRecord(models.Model):
     vehicle = models.ForeignKey(
